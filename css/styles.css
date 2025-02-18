@@ -260,7 +260,7 @@ button {
 }
 
 .mobile-menu-nav {
-    margin-bottom: 128px;
+    height: 100%;
 }
 
 .mobile-menu-list {
@@ -272,7 +272,7 @@ button {
     color: #2E2F42;
 }
 
-.mobile-menu-item {
+.mobile-menu-list li:not(:last-child) {
     margin-bottom: 40px;
 }
 
@@ -296,7 +296,7 @@ button {
 }
 
 .mobile-address-list {
-    margin-bottom: 48px;
+    padding-bottom: 48px;
 }
 
 .mobile-address-item {
@@ -380,8 +380,8 @@ button {
     letter-spacing: 0.02em;
     color: #ffffff;
     text-align: center;
-    margin-bottom: 72px;
     padding-right: 52px;
+    padding-bottom: 72px;
     padding-left: 52px;
 }
 
@@ -433,10 +433,9 @@ button {
     .hero-title {
         font-size: 56px;
         line-height: 1.07;
-        margin-bottom: 36px;
         padding-right: 84px;
+        padding-bottom: 36px;
         padding-left: 84px;
-        /* text-align: center; */
     }
 }
 
@@ -466,8 +465,8 @@ button {
 
     .hero-title {
         padding-right: 315px;
+        padding-bottom: 48px;
         padding-left: 315px;
-        margin-bottom: 48px;
     }
 
     .hero-btn:hover {
@@ -508,7 +507,6 @@ button {
 .features-list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: flex-start;
     gap: 72px;
 }
@@ -563,8 +561,8 @@ button {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 0 24px;
-        /* margin-bottom: 64; */
+        gap: 64px 24px;
+        
     }
 
     .team-item {
@@ -621,6 +619,10 @@ button {
         font-weight: 400;
     }
 
+    .team-list {
+        gap: 24px;
+    }
+
     .portfolio {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -675,8 +677,7 @@ button {
 
 .team {
     background-color: #F4F4FD;
-    padding-top: 96px;
-    padding-bottom: 24px;
+    padding: 96px 0;
 }
 
 .team-title {
@@ -687,14 +688,21 @@ button {
     color: #2E2F42;
     text-align: center;
     text-transform: capitalize;
-    margin-bottom: 72px;
+    padding-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px;
 }
 
 .team-item {
     background-color: #FFFFFF;
-    border-radius: 0px 0px 4px 4px; 
+    border-radius: 0px 0px 4px 4px;
     max-width: 264px;
-    margin-bottom: 72px;
+    height: 428px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
                 0 1px 1px 0 rgba(46, 47, 66, 0.16), 
                 0 1px 6px 0 rgba(46, 47, 66, 0.08);       
@@ -711,7 +719,7 @@ button {
     letter-spacing: 0.02em;
     color: #2E2F42;
     text-align: center;
-    margin-bottom: 8px
+    padding-bottom: 8px;
 }
 
 .team-item-profession {
@@ -721,7 +729,7 @@ button {
     letter-spacing: 0.02em;
     color: #434455;
     text-align: center;
-    margin-bottom: 8px;
+    padding-bottom: 8px;
 }
 
 .team-soc-list {
@@ -771,7 +779,7 @@ button {
     text-align: center;
     text-transform: capitalize;
     color: #2E2F42;
-    margin-bottom: 72px;
+    padding-bottom: 72px;
 }
 
 .portfolio-list {
@@ -779,10 +787,6 @@ button {
     flex-wrap: wrap;
     row-gap: 48px;
 }
-
-/* .portfolio-cover-text {
-    display: none;
-} */
 
 .service {
     padding: 32px 16px;
@@ -796,7 +800,7 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    margin-bottom: 8px;
+    padding-bottom: 8px;
 }
 
 .portfolio-services-text {
@@ -824,7 +828,7 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
-    margin-bottom: 16px;    
+    padding-bottom: 16px;   
 }
 
 .logos-cloud {
@@ -838,7 +842,7 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
-    margin-bottom: 72px;
+    padding-bottom: 72px;
 }
 
 .paragraph {
@@ -849,14 +853,14 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
 }
 
 .soc-list {
     display: flex;
     justify-content: center;
     gap: 16px;
-    margin-bottom: 72px;
+    padding-bottom: 72px;
 }
 
 .soc-link {
@@ -882,7 +886,7 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
 }
 
 .footer-form {
@@ -943,14 +947,12 @@ button {
 
 .subscribe-tg {
     fill: #FFFFFF;
-    /* margin-left: 16px; */
 }
 
 @media screen and (min-width: 768px) {
     .footer-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: start;
     }
 
     .logos {
@@ -958,8 +960,8 @@ button {
     }
 
     .div {
-        margin-left: 92px;
-        margin-right: 24px;
+        padding-left: 92px;
+        padding-right: 24px;
     }
 
     .paragraph {
@@ -976,14 +978,13 @@ button {
     }
 
     .form-div {
-        margin-left: 92px;
+        padding-left: 92px;
     }
     
     .footer-input {
         font-size: 12px;
         line-height: 2;
         letter-spacing: 0.04em;
-        /* display: flex; */
         border: 1px solid #FFFFFF;
         border-radius: 4px;
         width: 264px;
@@ -1004,45 +1005,29 @@ button {
     .footer-container {
         display: flex;
         flex-wrap: nowrap;
-        align-items: baseline;
         height: 112px;
     } 
     
     .div {
-        margin-left: 0;
-        margin-right: 120px;
-    }
-    
-    .logos {
-        
+        padding-right: 120px;
+        padding-left: 0;
     }
     
     .footer-item-text {
         margin-bottom: 0;
     }
     
-    .paragraph {
-        
-    }
-    
     .soc-link:hover {
         background-color: #31D0AA;
     }
     
-    .form-paragraph {
-        
-    } 
-    
     .form-div {
-        margin-left: 80px;
-    }
-    
+        padding-left: 80px;
+    } 
+
     .footer-form {
         flex-wrap: nowrap;
         gap: 24px;
-    }
-    
-    .footer-btn {
     }
     
     .footer-btn:hover {
