@@ -558,9 +558,6 @@ button {
     }
 
     .team-list {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
         gap: 64px 24px;
         
     }
@@ -617,10 +614,6 @@ button {
 
     .features-item-text {
         font-weight: 400;
-    }
-
-    .team-list {
-        gap: 24px;
     }
 
     .portfolio {
@@ -695,14 +688,13 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 72px;
+    row-gap: 72px;
 }
 
 .team-item {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     max-width: 264px;
-    height: 428px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
                 0 1px 1px 0 rgba(46, 47, 66, 0.16), 
                 0 1px 6px 0 rgba(46, 47, 66, 0.08);       
