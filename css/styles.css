@@ -712,6 +712,7 @@ button {
     letter-spacing: 0.02em;
     color: #2E2F42;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-item-profession {
@@ -721,14 +722,13 @@ button {
     letter-spacing: 0.02em;
     color: #434455;
     text-align: center;
-    padding-top: 8px;
 }
 
 .team-soc-list {
     display: flex;
     justify-content: center;
     gap: 24px;
-    padding-top: 8px;
+    margin-top: 8px;
 }
 
 .team-soc-item {
@@ -772,13 +772,13 @@ button {
     text-align: center;
     text-transform: capitalize;
     color: #2E2F42;
-    padding-bottom: 72px;
 }
 
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
     row-gap: 48px;
+    padding-top: 72px;
 }
 
 .service {
@@ -793,7 +793,7 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .portfolio-services-text {
