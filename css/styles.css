@@ -269,19 +269,19 @@ button {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    color: #2E2F42;
 }
 
 .mobile-menu-list li:not(:last-child) {
     margin-bottom: 40px;
 }
 
-.mobile-menu-link:focus {
-    color: #404BBF;
+.mobile-menu-link {
+    color: #2E2F42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-contact:focus {
-    color: #4D5AE5;
+.mobile-menu-link:focus {
+    color: #404BBF;
 }
 
 .mobile-contact {
@@ -295,8 +295,8 @@ button {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-address-list {
-    padding-bottom: 48px;
+.mobile-contact:focus {
+    color: #4D5AE5;
 }
 
 .mobile-address-item {
@@ -306,6 +306,7 @@ button {
 .menu-soc-list {
     display: flex;
     gap: 40px;
+    padding-top: 48px;
 }
 
 .soc-item {
@@ -681,7 +682,6 @@ button {
     color: #2E2F42;
     text-align: center;
     text-transform: capitalize;
-    padding-bottom: 72px;
 }
 
 .team-list {
@@ -689,6 +689,7 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 72px;
+    padding-top: 72px;
 }
 
 .team-item {
@@ -711,7 +712,6 @@ button {
     letter-spacing: 0.02em;
     color: #2E2F42;
     text-align: center;
-    padding-bottom: 8px;
 }
 
 .team-item-profession {
@@ -721,13 +721,14 @@ button {
     letter-spacing: 0.02em;
     color: #434455;
     text-align: center;
-    padding-bottom: 8px;
+    padding-top: 8px;
 }
 
 .team-soc-list {
     display: flex;
     justify-content: center;
     gap: 24px;
+    padding-top: 8px;
 }
 
 .team-soc-item {
