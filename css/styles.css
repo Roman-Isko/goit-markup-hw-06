@@ -560,14 +560,14 @@ button {
         text-align: start;
     }
 
-    .team-list {
+    /* .team-list {
         gap: 64px 24px;
         
     }
 
     .team-item {
         flex-basis: calc((100% - 24px) / 2);
-    }
+    } */
 
     .portfolio-list {
         gap: 24px;
@@ -1262,6 +1262,17 @@ button {
 
 .modal-btn:focus {
     background-color: #404BBF;
+}
+
+@media screen and (min-width: 768px) {
+    .team-list {
+        gap: 64px 24px;
+
+    }
+
+    .team-item {
+        flex-basis: calc((100% - 24px) / 2);
+    }
 }
 
 @media screen and (min-width: 768px) {
