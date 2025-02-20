@@ -306,7 +306,7 @@ button {
 .menu-soc-list {
     display: flex;
     gap: 40px;
-    padding-top: 48px;
+    margin-top: 48px;
 }
 
 .soc-item {
@@ -374,16 +374,17 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    /* width: 100%; */
+    max-width: 216px;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: #ffffff;
     text-align: center;
-    padding-right: 52px;
-    padding-bottom: 72px;
-    padding-left: 52px;
+    margin-right: 52px;
+    margin-bottom: 72px;
+    margin-left: 52px;
 }
 
 .hero-btn {
@@ -434,9 +435,10 @@ button {
     .hero-title {
         font-size: 56px;
         line-height: 1.07;
-        padding-right: 84px;
-        padding-bottom: 36px;
-        padding-left: 84px;
+        max-width: 100%;
+        margin-right: 84px;
+        margin-bottom: 36px;
+        margin-left: 84px;
     }
 }
 
@@ -465,9 +467,9 @@ button {
 }
 
     .hero-title {
-        padding-right: 315px;
-        padding-bottom: 48px;
-        padding-left: 315px;
+        margin-right: 315px;
+        margin-bottom: 48px;
+        margin-left: 315px;
     }
 
     .hero-btn:hover {
@@ -689,7 +691,7 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 72px;
-    padding-top: 72px;
+    margin-top: 72px;
 }
 
 .team-item {
@@ -778,7 +780,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     row-gap: 48px;
-    padding-top: 72px;
+    margin-top: 72px;
 }
 
 .service {
